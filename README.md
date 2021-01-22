@@ -1,46 +1,24 @@
-# Avoiding Software Complexity
+# Finding Your Way in ECS
 
-## Software = Behaviour (ware) that can change easily (soft). 
-As opposed to Hardware: 
-- Software yields functionality fast (no heavy atoms, just weightless bits)
-- Encourages More Change (because you can, you will, and you should)
-- Unless managed via a closed loop process, operational Complexity emerges (order => disorder => chaos)
-- Complex Systems are Inherently unmanageable => Inability to see the system in its entirety
+ECS consists of a Framework, Methodology and Tooling. 
 
+The repository structure is outlined below with links to respective locaitons.
 
-## Software Engineering is the:
-- Recursive process of Ordering & Assembling the
-- Universal building blocks of digital execution (Category theory => Composable Structures => Structure => Architecture)
-- Subject to the universal software rules of coupling (text files that reference other text files)
+## Simplicity & Ease
 
-## Software Architecture is a property of every software system
-- Regardless of whether it is managed of not
-- Left unmanaged, your software system will drift into complexity => disorder & chaos
+The ecs folder structer is intended to be simple and intuitive to navigate 
 
-## The role of Software Architecture Management is to continually strive for:
-- Minimising the cost profile of the Software System (TCO & Margin Cost)
-- Maximizing the Changeability of Software Systems
-- Cost optimised Scaling of software engineering processes
-- Partitioning the system into fail safe change zones to contain the impacts of breaches and bugs
-- By solving for Inherent Structural Composition through the application of 
-- Black box abstractions (Lego brick Shapes) and 
-- Standard impedances (Lego brick Connectors)
+It is important that no prior knowledge of the ecs concepts nor ecs know-how is required.
 
-# Structural Integrity
+Each folder serves a specific funciton and the usage of ecs is intended to be zero based - meaning - you begin at the top of the tree and work your way down. 
 
-## Files, Folders and Git
+At each step in the tree-folder structure - there is a job that must be done. 
 
-The prime directive in ECS is to only depend on Files, Folders and Git. This is so that we can invert the details and change everything that the Enterprise Cloud Framework abstraction operates within.
+The job within each folder must be autonomous - it must be self validating and independently lifecycle managed.
 
-## Files & Folders
+Job are composable - ECS has service/job layers that are plugged together until the ecs is fully operational
 
-The ecs folder structer is intended to be simple and intuitive to navigate.
-
-Each folder should serve a specific funciton and the usage of ecs should be zero based - meaning - you begin at the top of the tree and work your way down. 
-
-At each step in the tree-folder structure - there is a job that must be done. Each job is autonomous - it must be self validating and independently lifecycle managed.
-
-Each job builds on the previous one - until the ecs is fully operational
+## ECS Repository Structure
 
 ```
 ecs/                           --> Start here
@@ -76,19 +54,6 @@ ecs/                           --> Start here
         |-- %INSTANCE_TWO%     --> second instance ...
 |-- onboard/                   --> Step by step guide and commands for onboarding to ECS
 |-- operate/                   --> Operating Model for managing the lifecycle of ECS
+|-- improve/                       --> ECS Improvement proposals
 
 ```
-
-## Git
-
-When knowledge and know-how are codified - the code represents extremely powerful kinetic potential. 
-
-Code must be transformed:
-- **FROM:** Text in a file, in a folder structure  
-- **TO:** bits running on a disk powered (*ultimately*) by a physical machine
-
-This process is the source of all problems in software.
-
-The impact that can occur from malicious or unintended change - can be catastrophic.
-
-Git provides a strong governing mechanism that - when used effectively - significantly reduces the error rate that is inherent in change. When this process is coupled with a "change workflow" that gradually propagates changes across fail safe nodes - the impact of change related errors becomes a function of the **Value at risk** that is contained within the **blast radius of the fail safe zone**
